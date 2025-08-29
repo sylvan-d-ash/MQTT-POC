@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		04307BF32E61AA6C00CE74EE /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 04307BF22E61AA6C00CE74EE /* CocoaMQTT */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		04307BDD2E61A96A00CE74EE /* MQTT POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MQTT POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04307BF32E61AA6C00CE74EE /* CocoaMQTT in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "MQTT POC";
 			packageProductDependencies = (
+				04307BF22E61AA6C00CE74EE /* CocoaMQTT */,
 			);
 			productName = "MQTT POC";
 			productReference = 04307BDD2E61A96A00CE74EE /* MQTT POC.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 04307BD42E61A96A00CE74EE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				04307BF12E61AA6C00CE74EE /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 04307BDE2E61A96A00CE74EE /* Products */;
 			projectDirPath = "";
@@ -335,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04307BF12E61AA6C00CE74EE /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04307BF22E61AA6C00CE74EE /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04307BF12E61AA6C00CE74EE /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04307BD52E61A96A00CE74EE /* Project object */;
 }
